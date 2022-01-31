@@ -10,7 +10,7 @@
       ]
     }
   ],
-  "description": "Help with getting started",
+  "description": "Helps beginners with getting started",
   "gateway_specific_settings": {
     "webthings": {
       "exec": "python3 {path}/main.py",
