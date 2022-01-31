@@ -10,7 +10,7 @@
       ]
     }
   ],
-  "description": "Helps with onboarding of users and devices",
+  "description": "Help with getting started",
   "gateway_specific_settings": {
     "webthings": {
       "exec": "python3 {path}/main.py",
@@ -29,8 +29,8 @@
   "web_accessible_resources": [
     "css/*.css",
     "images/*.svg",
-	"images/*.gif",
-	"images/*.jpg",
+    "images/*.gif",
+    "images/*.jpg",
     "js/*.js",
     "views/*.html"
   ]
