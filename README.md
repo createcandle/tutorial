@@ -1,2 +1,2 @@
-# power-settings
-Extra settings, like shutdown and reboot, for the Mozilla WebThings Gateway
+# Welcome
+An addon for the Candle smart home controller that helps people get started
