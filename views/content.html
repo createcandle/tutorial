@@ -13,36 +13,123 @@
     <div id="extension-welcome-content-container">
         
         <img id="extension-welcome-candle-logo" src="/extensions/welcome/images/candle-logo.svg" />
-        <p>This smart home controller comes with tons of features, many designed to protect your privacy.</p>
+        <p>This smart home controller has a strong focus on protecting privacy.</p>
         
-        <div class="extension-welcome-option">
-            <div>
-                <img src="/extensions/welcome/images/discussion.svg" />
+        <div id="extension-welcome-discussion-button" class="extension-welcome-option" data-page="discussion">
+            <div data-page="discussion">
+                <img src="/extensions/welcome/images/discussion.svg" data-page="discussion"/>
             </div>
-            <div>
-                <h2>Discuss any changes</h2>
-                <p>Before you make changes to your smart home, always discuss them with your family and close friends.</p>
+            <div data-page="discussion">
+                <h2 data-page="discussion">Discuss any changes</h2>
+                <p data-page="discussion">Before you make changes to your smart home, always discuss them with your family and close friends.</p>
             </div>
         </div>
         
-        <div class="extension-welcome-option">
-            <h2>Connecting new things</h2>
+        <div class="extension-welcome-option" data-page="things">
+            <h2 data-page="things">Connecting new things</h2>
         </div>
         
-        <div class="extension-welcome-option">
-            <h2>Logging data</h2>
+        <div class="extension-welcome-option" data-page="logs">
+            <h2 data-page="logs">Logging data</h2>
         </div>
         
-        <div class="extension-welcome-option">
-            <h2>Creating automations</h2>
+        <div class="extension-welcome-option" data-page="rules">
+            <h2 data-page="rules">Creating automations</h2>
         </div>
         
-        <div class="extension-welcome-option">
-            <h2>Adding features</h2>
+        <div class="extension-welcome-option" data-page="features">
+            <h2 data-page="features">Adding features</h2>
         </div>
         
         <div style="text-align:right">
             <button id="extension-welcome-hide-button" class="text-button">Do not show as first page</button>
+        </div>
+        
+    </div>
+    
+    
+    <div id="extension-welcome-pages-container">
+        
+        <div id="extension-welcome-back-button"></div>
+        
+        <div id="extension-welcome-pages">
+            <div id="extension-welcome-page-discussion">
+                <h2>Discussion</h2>
+                <p>Everyone in the home should have a say in when, where and how smart home technology is used.</p>
+                <p>Before you purchase any device, add an automation or log, or install any new feature, always try to explore the potential risks and harms with your family members and others who visit frequently.</p>
+            
+                <h3>Children and teenagers</h3>
+                <p>Children and teenagers need privacy to support their mental and social development.</p>
+                <p>
+                    <ul>
+                        <li>Sensors in children's room could pick their sleeping habits. While it's great if kids go to bed on time, sometimes being naughty is healthy and fun.</li>
+                        <li>Sensor could pick up when people have sex. For example, a humidity or carbon dioxide sensor can indicate increased physical activity.</li>
+                    </ul>
+                </p>
+                <p>Generally, make sure children behave a certain way based on intrinsic motivation - because they want to - and not becaause they fear repercussion.</p>
+            
+                <h3>Partners</h2>
+                <p>Smart homes technology has been used in domestic violence situations. While it's impossible to avoid such abuse through technologica countermeasures, we're tried to implement some experimental mitigation systems.</p>    
+                
+                <h3>Guests</h3>
+                <p>It goes without saying that guests should be informed about the existence of smart home technology.</p>
+                <p>You may be tempted to keep track of the working hours of house cleaners. Be aware that not disclosing such practices beforehand is illegal.</p>
+            
+            </div>
+        
+            <div id="extension-welcome-page-things">
+                <h2>Adding new things</h2>
+                <p>There are a number of ways you can add new 'things'.</p>
+                <p>
+                    <ul>
+                        <li>Purchase new devices</li>
+                        <li>Install new addons which create 'virtual things'</li>    
+                    </ul>
+                </p>
+                <p>Virtual things are quite common. For example, the Energy Use addon calculates the total energy use as reported by real energy monitoring devices, and creates a new 'virtual thing' that shows the total energy use of those devices.</li>
+                <p>In either case, getting the things to show up in the things overview starts by going to the thing overview and clicking on the big plus button in the bottom right. <img src="/images/add.svg" style="float:right; margin:1rem"/></p>
+                <p>Things have "properties". Most things will allow you to select which property you would like to be highlighted on the things overview page. Once you're on a thing's page, use the edit button in the bottom right to make changes to its name and/or which property you would like o to see highlighted.</p>
+                
+            </div>
+        
+            <div id="extension-welcome-page-logs">
+                <h2>Data logs</h2>
+                <p>Data logs are powerful, so let's talk about precautions first.</p>
+                <p>Once you have a device, you can create a data log for it. Always make sure you only log data if everyone is OK with logging the data, and discuss for how long the data should be kept. Having these logs can lead to unexpected forms of abuse. Resist the temptation by making sure there isn't much data to abuse.</p>
+                <p>If you are going to log data, always make sure you also have the Privacy Manager addon installed so that data can easily be deleted or modified.</p>
+                
+                <h3>Adding a new log</h3>
+                <p>Visit the logs page, and press the button in the bottom right to start adding a new log. <img src="/images/add.svg" style="float:right; margin:1rem"/></p>
+                <p>Select the device you want to record data from, and then the property you want to record. Also select how long data may be stored. Choose the smallest duration necessary for your pruposes.</p>
+                
+            </div>
+        
+            <div id="extension-welcome-page-rules">
+                <h2>Automations</h2>
+                <p>Once you have a number of things, you can start to make them respond to certain events. For example, you could turn on the lights in the morning, and turn them off at night automatically.</p>
+                
+                <h3>Rules</h3>
+                <p>Rules offer a lot of possiblities. You could make things react to button presses, the time of day, the value of certain things, and more.</p>
+                
+                <h3>Followers</h3>
+                <p>You can make the property of one device change in relation to another. For example, if the brightness of one light changes, you could make the brightness of a second light follow that brightness value automatically.</p>
+                <p>It's also possible to invert this relation: while one light grows brighter, another could grow dimmer. You can also play with these levels. For example, 0 to 50% of volume of the radio could translate to values between 0 and 100 for a light. If the radio volume is set above 50%, the light will stay at 100%, since it can't go any higher.</p>
+                
+                <p>Some recommendations:</p>
+                <p>
+                    <ul>
+                        <li>Use an IKEA Symfonisk sound controller with the Internet radio addon. Using Rules, let a press of the button turn the radio on and off. Using Followers, let the rotation of the button change the volume of the radio.</li>
+                        <li>Use an IKEA push button with the Privacy Manager addon. Let a button press delete the last 2 hours from your data logs. Then place the button in a place where every member of the household can press it without drawing attention to themselves.</li>
+                        <li>using the Network Presence Detection addon, automatically turn of the heating if none of the phones or laptops are on your wifi network.</li>
+                    </ul>
+                </p>
+            </div>
+        
+            <div id="extension-welcome-page-features">
+                <h2>Adding features</h2>
+                <p>You can extend the possibilities of this controller by installing them from the Candle app store.</p>
+                <p>The app store tries to inform you of what 'addons' are available, and how those addons may affect privacy and security.</p>
+            </div>
         </div>
         
     </div>

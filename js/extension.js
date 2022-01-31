@@ -55,6 +55,7 @@
                 document.getElementById('extension-welcome-hide-button').style.display = 'none';
             }
             
+            // Do not show on startup button
             document.getElementById('extension-welcome-hide-button').addEventListener('click', () => {
                 
 				window.API.postJson(
@@ -69,6 +70,39 @@
 				});
                 
             });
+            
+            
+            // Back button
+            document.getElementById('extension-welcome-back-button').addEventListener('click', () => {
+                document.getElementById('extension-welcome-pages-container').style.display = 'none';
+            });
+            
+            
+            
+            
+            document.querySelectorAll('.extension-welcome-option').forEach(item => {
+                item.addEventListener('click', event => {
+                    console.log(event);
+                    console.log(event.srcElement.getAttribute('data-page'));
+                    const target_page = event.target.getAttribute('data-page');
+                    
+                    document.querySelectorAll('#extension-welcome-pages > div').forEach(page => {
+                        console.log("target_page: ", target_page);
+                        if(page.getAttribute('id').endsWith(target_page)){
+                            page.style.display = 'block';
+                        }
+                        else{
+                            page.style.display = 'none';
+                        }
+                        document.getElementById('extension-welcome-pages-container').style.display = 'block';
+                        
+                    })    
+                    
+                })
+            })
+            
+            
+            
             
         }
         
