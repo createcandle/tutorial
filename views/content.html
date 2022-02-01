@@ -13,7 +13,7 @@
     <div id="extension-welcome-content-container">
         
         <img id="extension-welcome-candle-logo" src="/extensions/welcome/images/candle-logo.svg" />
-        <p>This smart home controller has a strong focus on protecting privacy.</p>
+        <p>The Candle smart home controller has a strong focus on protecting privacy.</p>
         
         <div id="extension-welcome-discussion-button" class="extension-welcome-option" data-page="discussion">
             <div data-page="discussion">
@@ -56,7 +56,23 @@
             <div id="extension-welcome-page-discussion">
                 <h2>Discussion</h2>
                 <p>Everyone in the home should have a say in when, where and how smart home technology is used.</p>
-                <p>Before you purchase any device, add an automation or log, or install any new feature, always try to explore the potential risks and harms with your family members and others who visit frequently.</p>
+                <p>Before you purchase any device, add an automation or log, or install any new feature, always try to explore the potential risks and harms with your family members and others who visit frequently. Sit down with them and create some norms and values around how the devices should, and should not, be used.</p>
+            
+                <h3>Checklist</h3>
+                <p>
+                    <ul>
+                        <li><input type="checkbox"/> WHY would the device be useful in the first place?</li>
+                        <li><input type="checkbox"/> SHORT TERM. What are potential short term downsides? Sensors might reveal more types of behaviour than intened. For example, keeping a log of when lights are switched means you're keeping a log of when people come and go, and how long they sleep. Air quality sensors can reveal how many people are in a room, or what they are doing.</li>
+                        <li><input type="checkbox"/> LONG TERM. Could the change contribute to a culture of surveillance? Could it harm a sense of autonomy?</li>
+                        <li><input type="checkbox"/> TEMPTATION. How might the existence of a device or data log lead to temptation to use its data against the other people in the household?</li>
+                        <li><input type="checkbox"/> WHO is allowed to control the device?</li>
+                        <li><input type="checkbox"/> WHEN is it ok? For example, are there parts of the day when data logging could be disabled? Practically, think twice before creating automations that can turn on the lights at night, as this could disturb others.</li>
+                        <li><input type="checkbox"/> OWNERSHIP. Who should get a 'veto' on the device?</li>
+                        <li><input type="checkbox"/> DATA LOGGING. If data from the device is logged, for how long should this be done? How much detail do you need from a sensor? Do you need minute to minute updates, or might hourly updates be sufficient? Always try to collect as little data as possible.</li>
+                        <li><input type="checkbox"/> DISABLING. Make sure people feel that turning off a device's data recording features is acceptable and normal.</li>
+                        <li><input type="checkbox"/> REMOVAL. Under what circumstances should the device be removed? What will be concidered crossing a line into abuse?</li>
+                    </ul>
+                </p>
             
                 <h3>Children and teenagers</h3>
                 <p>Children and teenagers need privacy to support their mental and social development.</p>
@@ -66,10 +82,11 @@
                         <li>Sensor could pick up when people have sex. For example, a humidity or carbon dioxide sensor can indicate increased physical activity.</li>
                     </ul>
                 </p>
-                <p>Generally, make sure children behave a certain way based on intrinsic motivation - because they want to - and not becaause they fear repercussion.</p>
+                <p>Generally, ask if children are behaving a certain way based on intrinsic motivation - because they want to - and not because they feel surveillance and controlled. </p>
             
                 <h3>Partners</h2>
-                <p>Smart homes technology has been used in domestic violence situations. While it's impossible to avoid such abuse through technologica countermeasures, we're tried to implement some experimental mitigation systems.</p>    
+                <p>Even if technology is implemented with the best of intentions, it can turn into a form of subtle control later. For example, keeping track of when your partner is home can become a source of unnecessary miscommunication and distrust. Once the data is there, is can be too tempting to look at it, and use it as 'ammunition' in discussions.</p>
+                <p>Smart homes technology has also been used in domestic violence situations. While it's impossible to avoid such abuse through technological counter measures, we're tried to implement some experimental mitigation systems in Candle. It's one of the reasons why it's possible to stop recording data for a while.</p>    
                 
                 <h3>Guests</h3>
                 <p>It goes without saying that guests should be informed about the existence of smart home technology.</p>
@@ -86,9 +103,17 @@
                         <li>Install new addons which create 'virtual things'</li>    
                     </ul>
                 </p>
+                
+                <h3>Purchasing devices</h3>
+                <p>We recommend you purchase Zigbee devices. We especially recommend devices by IKEA. Not only because Candle (through the Zigbee2MQTT addon) can update firmware for most IKEA devices, but also because IKEA has shown to care about privacy in the design of their systems. A full list of supported Zigbee devices can be found on the <a href="https://www.zigbee2mqtt.io/supported-devices/" target="_blank">Zigbee2MQTT website</a>, while a list of recommended devices can be found on the <a href="https:/www.candlesmarthome.com" target="_blank">Candle website</a>. Going with the recommended devices will give you the best experience, as they have been tested to work well.</p>
+                <p>If you're curious, you can also try to create DIY devices that are documented on the Candle website. These devices are as transparent about their data practices as they can get, as you are literally putting them together yourself.</p>
+                <p>Avoid WiFi devices. While some addons allow you to connect to such devices, they come with too many downsides. For one, they can autonomously connect to the internet, which can lead to unwanted data transfers. If you must use WiFi devices, then connect them via the Candle Hotspot addon. This addon creates a separate 'guest network', and will allow you some control over which servers these devices connect to.</p>
+                <p>If should go without saying that you should avoid using devices from parties such as Google or Amazon for whom large scale data collection is part of their business model.</p>
+                
+                <h3>Virtual devices</h3>
                 <p>Virtual things are quite common. For example, the Energy Use addon calculates the total energy use as reported by real energy monitoring devices, and creates a new 'virtual thing' that shows the total energy use of those devices.</li>
-                <p>In either case, getting the things to show up in the things overview starts by going to the thing overview and clicking on the big plus button in the bottom right. <img src="/images/add.svg" style="float:right; margin:1rem"/></p>
-                <p>Things have "properties". Most things will allow you to select which property you would like to be highlighted on the things overview page. Once you're on a thing's page, use the edit button in the bottom right to make changes to its name and/or which property you would like o to see highlighted.</p>
+                <p><img src="/images/add.svg" style="float:left; margin:1rem; width:3rem"/>In either case, getting the things to show up in the things overview starts by going to the thing overview and clicking on the big plus button in the bottom right. </p>
+                <p><img src="/images/overflow.svg" style="float:left; margin:1rem; width:3rem"/>Things have "properties". Most things will allow you to select which property you would like to be highlighted on the things overview page. Once you're on a thing's page, use the edit button in the bottom right to make changes to its name and/or which property you would like o to see highlighted.</p>
                 
             </div>
         
@@ -99,7 +124,7 @@
                 <p>If you are going to log data, always make sure you also have the Privacy Manager addon installed so that data can easily be deleted or modified.</p>
                 
                 <h3>Adding a new log</h3>
-                <p>Visit the logs page, and press the button in the bottom right to start adding a new log. <img src="/images/add.svg" style="float:right; margin:1rem"/></p>
+                <p><img src="/images/add.svg" style="float:left; margin:1rem; width:3rem"/>Visit the logs page, and press the button in the bottom right to start adding a new log. </p>
                 <p>Select the device you want to record data from, and then the property you want to record. Also select how long data may be stored. Choose the smallest duration necessary for your pruposes.</p>
                 
             </div>
@@ -110,25 +135,49 @@
                 
                 <h3>Rules</h3>
                 <p>Rules offer a lot of possiblities. You could make things react to button presses, the time of day, the value of certain things, and more.</p>
+                <p>When creating a new rule, you can place the 'inputs' on the left, and the things want to change in response on the right. example, you could turn on a light at 19:00.</p>
+                <p>If you look at the sentence that is being generated at the top of the screen while you're creating a rule, then you might spot a little dropdown option:</p>
+                <p><span class="triangle-select-container">
+        <select class="triangle-select rule-effect-select" style="width: 1.8rem;">
+          <option selected="">If</option>
+          <option>While</option>
+        </select>
+      </span></p>
+                <p>The "if" option makes it a momentary rule. This means if triggers once when the conditions are right, and then goes to sleep again. For example, a window contact sensor could turn of the heater as soon as someone opens the window. But while the window is open, you could simply turn on the heater anyway.</p>
+                <p>If you select the "while" option, the rule will check every second. This means you cannot override this rule manually. For example, imagine you create a rule to turn on the heater while the room temperature is below 18 degrees celcius. If the temperature drops to 17 degrees and the heater switches on, you cannot turn off the heater manually, since the rule will try to switch the heater back on every second.</p>
+                <p>If you add multiple 'inputs', then they all have to be 'true' for the entire rule to trigger. For example, you could make the heater turn on when the temperature dips below 18 degrees, but only if your phone is present on your network. This way the heater only turns on if the temperature is low AND you're home.</p>
                 
                 <h3>Followers</h3>
                 <p>You can make the property of one device change in relation to another. For example, if the brightness of one light changes, you could make the brightness of a second light follow that brightness value automatically.</p>
                 <p>It's also possible to invert this relation: while one light grows brighter, another could grow dimmer. You can also play with these levels. For example, 0 to 50% of volume of the radio could translate to values between 0 and 100 for a light. If the radio volume is set above 50%, the light will stay at 100%, since it can't go any higher.</p>
                 
-                <p>Some recommendations:</p>
+                <H3>Some recommendations:</h3>
                 <p>
                     <ul>
                         <li>Use an IKEA Symfonisk sound controller with the Internet radio addon. Using Rules, let a press of the button turn the radio on and off. Using Followers, let the rotation of the button change the volume of the radio.</li>
                         <li>Use an IKEA push button with the Privacy Manager addon. Let a button press delete the last 2 hours from your data logs. Then place the button in a place where every member of the household can press it without drawing attention to themselves.</li>
-                        <li>using the Network Presence Detection addon, automatically turn of the heating if none of the phones or laptops are on your wifi network.</li>
+                        <li>Using the Network Presence Detection addon, automatically turn of the heating if none of the phones or laptops are on your wifi network. Similarly, disable voice control when nobody is home to avoid abuse by criminals shouting through the letterbox.</li>
+                        <li>Switch off electric heaters if someone opens a window or outside door.</li>
                     </ul>
                 </p>
             </div>
         
             <div id="extension-welcome-page-features">
                 <h2>Adding features</h2>
-                <p>You can extend the possibilities of this controller by installing them from the Candle app store.</p>
-                <p>The app store tries to inform you of what 'addons' are available, and how those addons may affect privacy and security.</p>
+                <p>You can extend the possibilities of this controller by installing them from the Candle app store. The app store tries to inform you of what 'addons' are available, and how those addons may affect privacy and security.</p>
+                
+                <p>To help you decide if an addon might be of interest the Candle App store provides the following pieces of information:</p>
+                <p>
+                    <ul>
+                        <li>A privacy rating. This rating is created by Candle. The ideal is for an addon to have 5 closed eyes, which indicates that the addon only stores data locally, and follows 'privacy by design' principles.</li>
+                        <li>The community can also share their review of the addon. These are shown as the star rating. More stars mean the addons is liked and works well. If you create an account, then you can also share your opinion.</li>
+                        <li>The more glasses icons an addon has, the more it requires technical knowldge to set up.</li>
+                        <li>Our opinion. Where possible we try to clarify what addons to. This opinion is not created by the developer of the addon, but by the Candle team.</li>
+                    </ul>
+                </p>
+                
+                <h3>Limitations</h3>
+                <p>Candle is built 'on top of' the Webthings Gateway, an open source project originally developed by Mozilla, the makers of Firefox. The addons you find in the app store are created by volunteers, and are open source. That makes them wonderfully transparent. It also means they may contain bugs, or create instabilities. They may also send data to cloud services (simply because the feature is offers requires it). We cannot guarantee that non-Candle addons will work well with the addons we developed. Similarly, these addons currently do not come with privacy policies. Even if an addon has good reviews, any update could change how the addon functions.</p>
             </div>
         </div>
         

@@ -32,16 +32,27 @@
     box-sizing: border-box;
     overflow: auto;
     position:absolute;
+    color:white;
 }
 
 #extension-welcome-view h3{
     margin-top:4rem;
 }
 
+#extension-welcome-view a{
+    color:white;
+}
+
 #extension-welcome-pages li,
 #extension-welcome-pages p{
     line-height:2.7rem;
 }
+
+/*
+#extension-welcome-pages ul{
+    list-style-type: circle;
+}
+*/
 
 #extension-welcome-pages li{
     margin-bottom:1rem;
