@@ -184,10 +184,57 @@
 
 
 
+
+
 @media screen and (max-width: 640px) {
 	
     #extension-welcome-discussion-button > div:first-of-type{
 	    display:none;
 	}
+    
+}
+
+@media screen and (min-width: 1025px) {
+
+    #extension-welcome-pages{
+        padding-left:4rem;
+        padding-right:4em;
+        background-color:rgba(0,0,0,.1);
+    }
+
+}
+
+@media print {
+    
+    #extension-welcome-view,
+    #extension-welcome-view p,
+    #extension-welcome-view li{
+        color:black;
+    }
+    
+    #extension-welcome-pages{
+        background-color:transparent!important;
+    }
+    
+    #extension-welcome-view,
+    #extension-welcome-pages-container{
+        overflow:visible;
+        height:auto;
+        position:initial;
+    }
+    
+    #overflow-menu,
+    #transition-dialog,
+    #action-required-area,
+    #message-area,
+    #main-menu,
+    #menu-button,
+    #extension-welcome-back-button,
+    #extension-welcome-title,
+    #update-message-area,
+    #extension-welcome-content-container{
+        display:none;
+    }
+    
     
 }

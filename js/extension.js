@@ -20,7 +20,7 @@
                             'action': 'init'
                         }
                     ).then((body) => {
-                        console.log('Welcome init complete. body: ', body);
+                        //console.log('Welcome init complete. body: ', body);
                         this.show_at_start = body.show;
                         if(body.show){
                             document.getElementById('extension-welcome-menu-item').click(); // dispatchEvent(clickEvent);
@@ -28,7 +28,7 @@
                         
                         
                     }).catch((e) => {
-                        console.log("welcome error: ", e);
+                        //console.log("welcome error: ", e);
                     });
                     
                     
@@ -62,11 +62,11 @@
 					`/extensions/${this.id}/api/ajax`,
 					{'action':'hide'}
 				).then((body) => { 
-					console.log(body);
+					//console.log(body);
                     document.getElementById('extension-welcome-hide-button').style.display = 'none';
 
 				}).catch((e) => {
-					console.log("error saving preference");
+					//console.log("error saving preference");
 				});
                 
             });
@@ -82,12 +82,12 @@
             
             document.querySelectorAll('.extension-welcome-option').forEach(item => {
                 item.addEventListener('click', event => {
-                    console.log(event);
-                    console.log(event.srcElement.getAttribute('data-page'));
+                    //console.log(event);
+                    //console.log(event.srcElement.getAttribute('data-page'));
                     const target_page = event.target.getAttribute('data-page');
                     
                     document.querySelectorAll('#extension-welcome-pages > div').forEach(page => {
-                        console.log("target_page: ", target_page);
+                        //console.log("target_page: ", target_page);
                         if(page.getAttribute('id').endsWith(target_page)){
                             page.style.display = 'block';
                         }

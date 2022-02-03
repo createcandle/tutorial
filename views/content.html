@@ -26,7 +26,7 @@
         </div>
         
         <div class="extension-welcome-option" data-page="things">
-            <h2 data-page="things">Connecting new things</h2>
+            <h2 data-page="things">Adding new things</h2>
         </div>
         
         <div class="extension-welcome-option" data-page="logs">
@@ -37,12 +37,28 @@
             <h2 data-page="rules">Creating automations</h2>
         </div>
         
+        <div class="extension-welcome-option" data-page="voice">
+            <h2 data-page="voice">Voice control</h2>
+        </div>
+        
         <div class="extension-welcome-option" data-page="features">
             <h2 data-page="features">Adding features</h2>
         </div>
         
+        <div class="extension-welcome-option" data-page="grid">
+            <h2 data-page="grid">Going "off the grid"</h2>
+        </div>
+        
+        <div class="extension-welcome-option" data-page="privacy">
+            <h2 data-page="privacy">Privacy</h2>
+        </div>
+        
+        <div class="extension-welcome-option" data-page="license">
+            <h2 data-page="license">License</h2>
+        </div>
+        
         <div style="text-align:right">
-            <button id="extension-welcome-hide-button" class="text-button">Do not show as first page</button>
+            <button id="extension-welcome-hide-button" class="text-button">Stop showing as first page</button>
         </div>
         
     </div>
@@ -117,6 +133,7 @@
                 
             </div>
         
+        
             <div id="extension-welcome-page-logs">
                 <h2>Data logs</h2>
                 <p>Data logs are powerful, so let's talk about precautions first.</p>
@@ -129,6 +146,7 @@
                 
             </div>
         
+        
             <div id="extension-welcome-page-rules">
                 <h2>Automations</h2>
                 <p>Once you have a number of things, you can start to make them respond to certain events. For example, you could turn on the lights in the morning, and turn them off at night automatically.</p>
@@ -138,11 +156,11 @@
                 <p>When creating a new rule, you can place the 'inputs' on the left, and the things want to change in response on the right. example, you could turn on a light at 19:00.</p>
                 <p>If you look at the sentence that is being generated at the top of the screen while you're creating a rule, then you might spot a little dropdown option:</p>
                 <p><span class="triangle-select-container">
-        <select class="triangle-select rule-effect-select" style="width: 1.8rem;">
-          <option selected="">If</option>
-          <option>While</option>
-        </select>
-      </span></p>
+                    <select class="triangle-select rule-effect-select" style="width: 1.8rem;">
+                        <option selected="">If</option>
+                        <option>While</option>
+                    </select>
+                </span></p>
                 <p>The "if" option makes it a momentary rule. This means if triggers once when the conditions are right, and then goes to sleep again. For example, a window contact sensor could turn of the heater as soon as someone opens the window. But while the window is open, you could simply turn on the heater anyway.</p>
                 <p>If you select the "while" option, the rule will check every second. This means you cannot override this rule manually. For example, imagine you create a rule to turn on the heater while the room temperature is below 18 degrees celcius. If the temperature drops to 17 degrees and the heater switches on, you cannot turn off the heater manually, since the rule will try to switch the heater back on every second.</p>
                 <p>If you add multiple 'inputs', then they all have to be 'true' for the entire rule to trigger. For example, you could make the heater turn on when the temperature dips below 18 degrees, but only if your phone is present on your network. This way the heater only turns on if the temperature is low AND you're home.</p>
@@ -162,11 +180,27 @@
                 </p>
             </div>
         
+        
+            <div id="extension-welcome-page-voice">
+                <h2>Voice control</h2>
+                <p>Using your voice to control your home is a little bit like magic. Candle doesn't come with voice control pre-installed, but if you want to try it you will need three things:</p>
+                <p>
+                    <ul>
+                        <li>A speaker</li>
+                        <li>A supported USB microphone</li>
+                        <li>The Voco addon</li>
+                    </ul>
+                </p>
+                <p>Voco can be found in the Candle app store. We developed Voco with support from the (EU funded) Sherpa project www.project-sherpa.eu), and the code is open source (www.github.com/createcandle/voco). Voco in turn relies on Snips, a piece of software which handles the actual voice recognition. This software does not connect to the internet either.</p>
+                <p>The great thing about using a USB microphone is that you can unplug it at any time. While Voco never sends anything to the internet, we wanted to offer the feeling of security that comes with being able to be absolute sure that there is no microphone. To be clear: the Raspberry Pi (which the controller runs on) does not have a built-in microphone.</p>
+                
+            </div>
+            
+        
             <div id="extension-welcome-page-features">
                 <h2>Adding features</h2>
-                <p>You can extend the possibilities of this controller by installing them from the Candle app store. The app store tries to inform you of what 'addons' are available, and how those addons may affect privacy and security.</p>
-                
-                <p>To help you decide if an addon might be of interest the Candle App store provides the following pieces of information:</p>
+                <p>You can extend the possibilities of this controller by installing "addons" from the Candle app store. It's a bit like the apps on smart phones.</p>
+                <p>The app store tries to inform you of what 'addons' are available, and how those addons may affect privacy and security. It provides the following pieces of information:</p>
                 <p>
                     <ul>
                         <li>A privacy rating. This rating is created by Candle. The ideal is for an addon to have 5 closed eyes, which indicates that the addon only stores data locally, and follows 'privacy by design' principles.</li>
@@ -177,8 +211,79 @@
                 </p>
                 
                 <h3>Limitations</h3>
-                <p>Candle is built 'on top of' the Webthings Gateway, an open source project originally developed by Mozilla, the makers of Firefox. The addons you find in the app store are created by volunteers, and are open source. That makes them wonderfully transparent. It also means they may contain bugs, or create instabilities. They may also send data to cloud services (simply because the feature is offers requires it). We cannot guarantee that non-Candle addons will work well with the addons we developed. Similarly, these addons currently do not come with privacy policies. Even if an addon has good reviews, any update could change how the addon functions.</p>
+                <p>Candle is built 'on top of' the Webthings Gateway, an open source project originally developed by Mozilla, the makers of Firefox. The addons you find in the app store are created by volunteers, and are open source. That makes them wonderfully transparent. It also means they may contain bugs, or create instabilities. They may also send data to cloud services (simply because the feature is offers requires it).</p>
+                <p>We cannot guarantee that non-Candle addons will work well with the addons we developed. Similarly, these addons currently do not come with privacy policies. Even if an addon has good reviews, any update could change how the addon functions.</p>
             </div>
+            
+            
+            <div id="extension-welcome-page-grid">
+                <h2>Going off the grid</h2>
+                <p>We like the idea of using Candle without any internet connection. It's a statement: without an internet connection you can still have most smart home funtionality. It's the only way to guarantee that no data is sent to any internet server. As a welcome side-effect, it also makes it more difficult for hackers to attack the controller.</p>
+                <p>If you'd like to try this, you'll currently need to do three things:</p>
+                <p>
+                    <ol>
+                        <li>Setup Candle to your liking while it still has internet access. Download updates, install any addons you want to use, and maybe update the firmware of your Zigbee devices.</li>
+                        <li>Connect Candle to a router without internet access. We hope to eliminate this step at some point, but for now: buy a small wifi router, and connect Candle to this instead. While Candle currently needs to connect to a wifi hotspot to function, that wifi hotspot doesn't need to be connected to the internet.</li>
+                        <li>Set the time. If the router doesn't have internet access, neither will Candle. This does mean that whenever it reboots it cannot contact Internet Time Servers to ask what time it is. You will have to use the Power Settings addon and set the time manually after each reboot of the controller.</li>
+                    </ol>
+                </p>
+                <p>In the future we may support plugging a "DS3231 real time clock module" into your Raspberry Pi. This will give it its own clock with its own backup battery, so step 3 might be eliminated.</p>
+                <p>Similarly, it might be possible to eliminate step 2. You can already use the Hotspot addon to have the controller generate its own little WiFi network, and connect to that to gain access to the controller. Unfortunately the controller currently will not start up without a connection to a router.</p>
+            </div>
+            
+            
+            <div id="extension-welcome-page-privacy">
+                <h2>Privacy</h2>
+                <p>Candle is designed to be a showcase for new privacy features. We experiment with new ideas, and would love to hear your feedback and suggestions for further improvement. We focus on two situations:</p>
+                <p>
+                    <ul>
+                        <li>Corporate surveillance</li>
+                        <li>Coveillance</li>
+                    </ul>
+                </p>
+                
+                <h3>Corporate surveillance</h3>
+                <p>This one is simple. The only way to be sure that your private information is not misused is to make sure it never leaves your home. Candle explores to what degree this can be done without sacrificing ease of use.</p>
+                <p>Some examples:</p>
+                <p>
+                    <ul>
+                        <li>Where possible, the devices that Candle recommends will not autonomously connect to the internet. Zigbee devices, for example, cannot connect to the internet directly, They only connect to a central controller in your home, and that central controller can then request data from the internet if need be. For example, IKEA devices ask the controller to check for updates every 15 seconds. We helped develop code in the Zigbee management software that Candle uses (zigbee2MQTT) that make it possible to ignore these requests, or limit how often update checks are done. By default the Zigbee2MQTT addon limits it to only once every 2 days.</li>
+                        <li>Almost all "smart" devices that can connect to the internet directly (and your computer does this too) connect to "internet time servers" when they are turned on. These servers then provide the current time. Not having a clock on board saves a little money, but it means that these time servers are notified whenever you start your device. Whenever you connect to a server you by definitiion have to share your IP adres, which is personally identifiable information. That's why the Power settings addon allows to you disable this and set the time manually. The Hotspot addon can intercept these time requests from Wifi devices, and provide them with the time from the controller instead. While time servers are not nefarious, being able to avoid this is an example of how fundamentalist we are about protecting any data leakage.</li>
+                    </ul>
+                </p>
+                
+                <h3>Coveillance</h3>
+                <p>There are increasing reports that people living in smart homes are tempted to use the system to spy on each other. For example, partners may check eachothers coming and going. They may check the behaviour of their children. This can create a culture of surveillance within the home, which can be detrimental to human flourishing. While more technology is clearly not the answer to tech abuse, we do explore how these issues can be mitigated.</p>
+                <p>Some examples:</p>
+                <p>
+                    <ul>
+                        <li>We try to add a 'data collection' toggle to devices managed by addons. This allows you to stop collecting/receiving data from devices whenever you want, and even create scedules and rules for this.</li>
+                        <li>The network presence detection addon has a data-mute option for each device. This does the same thing as disabling data collection, but it comes with a timer. Every time someone clicks it, the period of time that incoming data is ignored is extended by one hour. The idea is that anyone can click this button at any time.</li>
+                        <li>The privacy manager addon offers many ways in which data can be deleted. This ranges from "delete all data collected in the last 8 hours for every device" to "change one datapoint for a specific device". We hope this adds some uncertainty to how reliable the logs are, so that they are less likely to be used as 'evidence' in domestic disagreements.</li>
+                    </ul>
+                </p>
+                
+                <h3>Privacy policy</h3>
+                <p>While Candle tries to minimize data leaving the controller, there are some practical limitations:</p>
+                <p>
+                    <ul>
+                        <li>If you open the Updates or Shop tab of the Candle App Store, then the controller will download the latest list of all available addons. We do not collect any data about you here, although technically there will be some information about your visit in the server logs, which are outside of out control. This also means that the controller doesn't periodically connect to the Candle server to check for updates for you. You'll have to check for updates yourself once in while.</li>
+                        <li>On the advanced options page of the Zigbee2MQTT addon you can choose to download a newer version of Zigbee2MQTT (www.zigbee2mqtt.io). If you decide to do this, then a newer version will be downloaded from www.github.com, a website run by Microsoft. If you own IKEA Zigbee devices, the addon will also check with the IKEA server if there are firmware updates. As always: any connection to an internet server automatically means you are sharing your IP address with it (otherwise it wouldn't know where to send data back to).</li>
+                        <li>By default Candle connect to Internet Time Servers to get the latest time. The Raspberry Pi (the little computer Candle runs on) does not have its own clock and backup battery, so after a reboot it needs to know what time it is. You could manually provide this time.</li>
+                        <li>If you use the Web Interface addon, then encrypted data from your smart home may be sent to the Candle webserver. We've designed this in such a way that these messages do not contain any personally identifiable information. Think of the Candle server as a blindfolded person passing sealed envelopes between two people.</li>
+                        <li>Specific apps may connect to internet servers. For example, the Internet Radio addon streams audio from the internet. It also connect to >www.radio-browser.info if you open the search page, and downloads data from that (community run) website if you do a search.</li>
+                    </ul>
+                </p>
+                <p>By the way, the reason this page doesn't offer links to the website it mentions is that your browser might try to "pre-load" those website. Websites do this to make it seem like they offer a really fast browsing experience, but this also means they contact all those servers, even if you don't actually decide to visit them.</p>
+            </div>
+            
+            
+            <div id="extension-welcome-page-license">
+                <h2>License</h2>
+                <p>Candle is built on top of the Webthings Gateway, an open source smart home controller that was originally developed by Mozilla. You can learn more about this project at www.webthings.io. The Webthings Gateway source code is available under the Mozilla Public License (www.mozilla.org).</p>
+            </div>
+            
+            
         </div>
         
     </div>
