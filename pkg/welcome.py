@@ -45,7 +45,7 @@ class WelcomeAPIHandler(APIHandler):
             )            
 
             self.addon_name = 'welcome'
-            self.DEBUG = True
+            self.DEBUG = False
             #self.adapter = adapter
             #print("ext: self.adapter = " + str(self.adapter))
 

@@ -116,7 +116,7 @@
                 <p>
                     <ul>
                         <li>Purchase new devices</li>
-                        <li>Install new addons which create 'virtual things'</li>    
+                        <li>Install new addons that create 'virtual things'</li>    
                     </ul>
                 </p>
                 
@@ -128,9 +128,26 @@
                 
                 <h3>Virtual devices</h3>
                 <p>Virtual things are quite common. For example, the Energy Use addon calculates the total energy use as reported by real energy monitoring devices, and creates a new 'virtual thing' that shows the total energy use of those devices.</li>
-                <p><img src="/images/add.svg" style="float:left; margin:1rem; width:3rem"/>In either case, getting the things to show up in the things overview starts by going to the thing overview and clicking on the big plus button in the bottom right. </p>
-                <p><img src="/images/overflow.svg" style="float:left; margin:1rem; width:3rem"/>Things have "properties". Most things will allow you to select which property you would like to be highlighted on the things overview page. Once you're on a thing's page, use the edit button in the bottom right to make changes to its name and/or which property you would like o to see highlighted.</p>
+                    
+                <h3>Things inbox</h3>
+                <p><img src="/images/add.svg" style="float:left; margin:1rem; width:3rem"/>Getting the things to show up in the things overview starts by going to the thing overview and clicking on the big plus button in the bottom right. This will take you to the "things inbox", where you can accept newly available things.</p>
+                <p>
+                    <img class="extension-welcome-screenshot" src="/extensions/welcome/images/things_inbox.png" alt="An example of the things inbox" />
+                    <span class="extension-welcome-image-description">An example of the things inbox</span>
+                </p>
+                <p>At the things inbox page you can also give your new thing a name. If you use voice control, then make sure the name is easy to pronounce.</p>
+                <p>Things have "properties". For example, a lightbulb has a "state" (on or off) and a "brightness". Usually one of the properties can be highlighted on the things overview. You can select which one using the dropdown.</p>
+                <p>If you select "custom property", then you can upload a custom icon for your thing. Have a look at www.publicdomainvectors.com if you want to download some icons.</p>
+                 
+                <p><img src="/images/overflow.svg" style="float:left; margin:1rem; width:3rem"/>You can always change all this later by going to a thing's page, and then clicking on the edit button in the bottom right.</p>
                 
+                <h3>Groups</h3>
+                <p>You may have also noticed that the things inbox allows you create new "groups". Groups become very useful once you have multiple devices. Try making a group called "Living room", and then go back to the things overview page. You'll notice the group name there. Try dragging on of your things into this new group.</p>
+                <p><img src="/extensions/welcome/images/drag_into_group.gif" alt="Dragging an icon into a group" style="margin:1rem auto;max-width:50%;display:inherit;" /></p>
+                <span class="extension-welcome-image-description">Dragging a thing into a group</span>
+                <p>&nbsp;</p>
+                <h3>Keyboard shortcuts</h3>
+                <p>At some point you may have a lot of things, at which time the search functionality becomes more useful. On the things overview just start typing (part of) the name of a thing. Press escape at any time to cancel the search. If your search has only one thing remaining, then you can press enter to open the thing details page. Once there you can press backspace to go back to the things overview.</p>
             </div>
         
         
@@ -143,6 +160,10 @@
                 <h3>Adding a new log</h3>
                 <p><img src="/images/add.svg" style="float:left; margin:1rem; width:3rem"/>Visit the logs page, and press the button in the bottom right to start adding a new log. </p>
                 <p>Select the device you want to record data from, and then the property you want to record. Also select how long data may be stored. Choose the smallest duration necessary for your pruposes.</p>
+                
+                <h3>Deleting data</h3>
+                <p><img src="/images/overflow.svg" style="float:left; margin:1rem; width:3rem"/>You can delete a log by clicking on its name on the logs overview page. This will take you to a page that shows only that single log. There you can click on the edit button, and delete it.</p>
+                <p>You can also use the Privacy Manager to delete data. It offers a higher level of control, even allowing you to delete individual data points, or all the data before or after a certain moment in time.</p>
                 
             </div>
         
@@ -178,6 +199,8 @@
                         <li>Switch off electric heaters if someone opens a window or outside door.</li>
                     </ul>
                 </p>
+                <h3>Keyboard shortcuts</h3>
+                <p>This becomes more useful once you have a lot of things. When you're creating a rule you can use your keyboard to filter which things are available. Press escape to cancel the search at any time, and see all your things again.</p>
             </div>
         
         
@@ -193,7 +216,7 @@
                 </p>
                 <p>Voco can be found in the Candle app store. We developed Voco with support from the (EU funded) Sherpa project www.project-sherpa.eu), and the code is open source (www.github.com/createcandle/voco). Voco in turn relies on Snips, a piece of software which handles the actual voice recognition. This software does not connect to the internet either.</p>
                 <p>The great thing about using a USB microphone is that you can unplug it at any time. While Voco never sends anything to the internet, we wanted to offer the feeling of security that comes with being able to be absolute sure that there is no microphone. To be clear: the Raspberry Pi (which the controller runs on) does not have a built-in microphone.</p>
-                
+                <p>Tip: don't put the microphone too close to the speakers, otherwise Voco might have trouble picking up your voice while music is playing.</p>
             </div>
             
         

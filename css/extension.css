@@ -36,7 +36,7 @@
 }
 
 #extension-welcome-view h3{
-    margin-top:4rem;
+    margin-top:6rem;
 }
 
 #extension-welcome-view a{
@@ -58,6 +58,24 @@
     margin-bottom:1rem;
 }
 
+
+#extension-welcome-content .extension-welcome-screenshot{
+    margin: 2rem auto 0 auto;
+    width:100%;
+}
+
+.extension-welcome-image-description{
+    font-style:italic;
+    margin-top:0;
+    padding:1rem;
+    margin-bottom:2rem;
+    text-align:center;
+    display:block;
+    font-size: 90%;
+    opacity: .8;
+}
+
+
 #extension-welcome-content{
     max-width: 80rem;
     margin: 0 auto;
@@ -75,7 +93,8 @@
 #extension-welcome-content-container > img{
     margin-bottom:0;
     margin-top: 2rem;
-    width:20rem;
+    width:200px;
+    height:124px;
     max-width:50%;
 }
 
@@ -89,9 +108,9 @@
 .extension-welcome-option{
     margin:2rem auto;
     width:100%;
-    background-color:rgba(0,0,0,.6);
+    background-color:rgba(0,0,0,.4);
     border-radius:.5rem;
-    padding:2rem;
+    padding:1rem 2rem;
     text-align:left;
     box-sizing:border-box;
     
@@ -132,7 +151,7 @@
     width:100vw;
     height:100vh;
     overflow:auto;
-    padding:4rem;
+    padding:1rem;
     background-color:#305068;
     display:none;
     box-sizing:border-box;
@@ -192,6 +211,9 @@
 	    display:none;
 	}
     
+    #extension-welcome-pages-container{
+        padding:4rem;
+    }
 }
 
 @media screen and (min-width: 1025px) {
