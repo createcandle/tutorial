@@ -155,12 +155,14 @@
     background-color:#305068;
     display:none;
     box-sizing:border-box;
+    max-width:100%;
 }
 
 #extension-welcome-pages{
     padding:2rem;
     max-width:80rem;
-    margin:0 auto;
+    margin:0 auto 50rem auto;
+    
 }
 
 #extension-welcome-pages > div{
