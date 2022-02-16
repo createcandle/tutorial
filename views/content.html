@@ -45,6 +45,10 @@
             <h2 data-page="features">Adding features</h2>
         </div>
         
+        <div class="extension-welcome-option extension-welcome-show-on-kiosk" data-page="touch">
+            <h2 data-page="touch">Using a display</h2>
+        </div>
+        
         <div class="extension-welcome-option" data-page="grid">
             <h2 data-page="grid">Going "off the grid"</h2>
         </div>
@@ -174,17 +178,35 @@
                 
                 <h3>Rules</h3>
                 <p>Rules offer a lot of possiblities. You could make things react to button presses, the time of day, the value of certain things, and more.</p>
-                <p>When creating a new rule, you can place the 'inputs' on the left, and the things want to change in response on the right. example, you could turn on a light at 19:00.</p>
-                <p>If you look at the sentence that is being generated at the top of the screen while you're creating a rule, then you might spot a little dropdown option:</p>
+                <p>
+                    <img class="extension-welcome-screenshot" src="/extensions/welcome/images/creating_a_rule.gif" alt="Creating a rule animation" />
+                    <span class="extension-welcome-image-description">Creating a rule to turn on a light at a certain time</span>
+                </p>
+                <p>When creating a new rule, you can place the 'inputs' on the left, and the things want to change in response on the right. For example, you could turn on a light at 10:50.</p>
+                <p>Once a rule is valid, a sentence describing it will be shown at the top of the screen. If you look at it closely, then you might spot a little dropdown option inside of it:</p>
                 <p><span class="triangle-select-container">
                     <select class="triangle-select rule-effect-select" style="width: 1.8rem;">
                         <option selected="">If</option>
                         <option>While</option>
                     </select>
                 </span></p>
-                <p>The "if" option makes it a momentary rule. This means if triggers once when the conditions are right, and then goes to sleep again. For example, a window contact sensor could turn of the heater as soon as someone opens the window. But while the window is open, you could simply turn on the heater anyway.</p>
-                <p>If you select the "while" option, the rule will check every second. This means you cannot override this rule manually. For example, imagine you create a rule to turn on the heater while the room temperature is below 18 degrees celcius. If the temperature drops to 17 degrees and the heater switches on, you cannot turn off the heater manually, since the rule will try to switch the heater back on every second.</p>
-                <p>If you add multiple 'inputs', then they all have to be 'true' for the entire rule to trigger. For example, you could make the heater turn on when the temperature dips below 18 degrees, but only if your phone is present on your network. This way the heater only turns on if the temperature is low AND you're home.</p>
+                <p>Selecting the "if" option makes it a momentary rule. This means it triggers once when the conditions are right, and then goes to sleep again. For example, a window contact sensor could turn of the heater as soon as someone opens the window. But while the window is open, you could simply turn on the heater anyway.</p>
+                <p>If you select the "while" option, the rule will check every second. In the example of the window and the heater, this means you cannot turn the heater on while the window is open, because every second the rule will try to switch off the heater again. </p>
+                <p>
+                    <img class="extension-welcome-screenshot" src="/extensions/welcome/images/rule_and_or.gif" alt="Creating a more complex rule animation" />
+                    <span class="extension-welcome-image-description">If it's 10:50 AND/OR the laptop is on the network, then turn on the light.</span>
+                </p>
+                <p>If you add multiple 'inputs', then you gain another choice:</p>
+                
+                <p><span class="triangle-select-container">
+                    <select class="triangle-select rule-trigger-select">
+                        <option>and</option>
+                        <option selected="">or</option>
+                    </select>
+                </span></p>
+                <p> Do all the triggers on the left have to be true, or only one of them? For example, you could make the heater turn on when the temperature dips below 18 degrees, but only if at that moment your phone is present on your network. This way the heater only turns on if the temperature drops AND you're home.</p>
+                
+                
                 
                 <h3>Followers</h3>
                 <p>You can make the property of one device change in relation to another. For example, if the brightness of one light changes, you could make the brightness of a second light follow that brightness value automatically.</p>
@@ -214,7 +236,7 @@
                         <li>The Voco addon</li>
                     </ul>
                 </p>
-                <p>Voco can be found in the Candle app store. We developed Voco with support from the (EU funded) Sherpa project www.project-sherpa.eu), and the code is open source (www.github.com/createcandle/voco). Voco in turn relies on Snips, a piece of software which handles the actual voice recognition. This software does not connect to the internet either.</p>
+                <p>Voco can be found in the Candle app store. We developed Voco with support from the (EU funded) Sherpa project (www.project-sherpa.eu), and the code is open source (www.github.com/createcandle/voco). Voco in turn relies on Snips, a piece of software which handles the actual voice recognition. This software does not connect to the internet either.</p>
                 <p>The great thing about using a USB microphone is that you can unplug it at any time. While Voco never sends anything to the internet, we wanted to offer the feeling of security that comes with being able to be absolute sure that there is no microphone. To be clear: the Raspberry Pi (which the controller runs on) does not have a built-in microphone.</p>
                 <p>Tip: don't put the microphone too close to the speakers, otherwise Voco might have trouble picking up your voice while music is playing.</p>
             </div>
@@ -236,6 +258,23 @@
                 <h3>Limitations</h3>
                 <p>Candle is built 'on top of' the Webthings Gateway, an open source project originally developed by Mozilla, the makers of Firefox. The addons you find in the app store are created by volunteers, and are open source. That makes them wonderfully transparent. It also means they may contain bugs, or create instabilities. They may also send data to cloud services (simply because the feature is offers requires it).</p>
                 <p>We cannot guarantee that non-Candle addons will work well with the addons we developed. Similarly, these addons currently do not come with privacy policies. Even if an addon has good reviews, any update could change how the addon functions.</p>
+            </div>
+            
+            
+            <div id="extension-welcome-page-touch">
+                <h2>Using a display</h2>
+                <p>So you connected a (touch) screen. Very nice. What you're seeing is essentially the Chromium browser (the stripped down open source version of Chrome) running in "kiosk mode".</p>
+                <p>There are some things you might find interesing:</p>
+                <p>
+                    <ul>
+                        <li>Drag your finger down from the top of the screen to the middle of the screen to refresh the page.</li>
+                        <li>Dragging your finger from the left of the screen to the middle is like pressing the back button on your browser.</li>
+                        <li>Kiosk mode comes with a virtual keyboard. It should pop-up automatically when you click on an input field. If you don't need this keyboard you can disable it in the Candle theme settings.</li>
+                        <li>You cannot open links to other websites inside this "kiosk mode".</li>
+                        <li>You cannot open files from the hard drive inside this "kiosk mode". If you want to upload photos to the photo frame, you will have to do this from another device, such as your phone or PC.</li>
+                        <li>Some addons might also behave slightly differently. For example, the page you're reading right now is only visible if you're using an attached display.</li>
+                    </ul>
+                </p>
             </div>
             
             

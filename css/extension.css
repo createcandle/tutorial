@@ -59,6 +59,18 @@
 }
 
 
+/*  Kiosk mode  */
+.extension-welcome-show-on-kiosk{
+    display:none;
+}
+
+.kiosk .extension-welcome-show-on-kiosk{
+    display:block;
+}
+
+
+/*  Screenshots  */
+
 #extension-welcome-content .extension-welcome-screenshot{
     margin: 2rem auto 0 auto;
     width:100%;
