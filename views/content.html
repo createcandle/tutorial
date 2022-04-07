@@ -324,12 +324,16 @@
                 <p><img src="/extensions/welcome/images/candle_voco_chat.png" alt="Connecting to the Matrix network" style="display:block;width:80%;margin:0 auto"/></p>
                 <p>Matrix is very similar to messaging apps like Whatsapp and Signal (it even uses the same encryption standard), but it's even more privacy friendly. If you enable this feature, then you can literally chat with your home as if you were in a Whatsapp or Signal conversation.</p>
                 <p><img src="/extensions/welcome/images/candle_voco_chat2.png" alt="Chatting using Matrix" style="display:block;width:50%;margin:2rem auto"/></p>
-                <p>The cool thing about Matrix is that it's a distributed ("federated") messaging network. This means it operates much like email, where there are multiple servers that exchange messages. You're not tied to one company, as you are with apps like Whatsapp. Anyone can run one of these servers. The small downside is that this means your conversations with Voco will be stored on a third party server. We only use servers we trust - more details about this can be found in the Voco app itself. If Candle becomes popular enough then we will setup our own Matrix server.</p>
+                <p>The cool thing about Matrix is that it's a distributed ("federated") messaging network. This means it operates much like email, where there are multiple servers that exchange messages. You're not tied to one company, as you are with apps like Whatsapp. Anyone can run one of these servers and become part of the network.</p>
+                <p>The small downside is that this means your conversations with Voco will be stored on a third party server. We only use servers we trust - more details about this can be found in the Voco addon itself. If Candle becomes popular enough then we will setup our own Matrix server.</p>
                 <p>The Matrix software is open source, and is created by a non-profit foundation. Learn more at matrix.org.</p>
                 
                 <h3>Web interface</h3>
-                <p>If you prefer a more traditional way of controlling your devices while on the go, then this addon might be for you. It offers an overview of your devices which you can access by visiting www.candlsmarthome.com/web .</p>
-                <p>It has a number of privacy protecting features:</p>
+                <p>If you prefer a more traditional way of controlling your devices while on the go, then this addon might be for you. It offers an overview of your devices which you can access by visiting www.candlesmarthome.com/web .</p>
+                
+                <p><img src="/extensions/welcome/images/candle_webinterface_web_ui.png" alt="The Webinterface... interface.. on the web." style="display:block;width:80%;margin:1rem auto"/></p>
+                
+                <p>It comes with a number of privacy protecting features:</p>
                 <p>
                     <ol>
                         <li>You can limit when your devices may be controlled. You can literally flip a switch to enable or disable outside access.</li>
@@ -337,11 +341,11 @@
                         <li>The messages between the web interface and your home are encrypted, so we don't know what anything about your device.</li>
                         <li>The Candle webserver only passes your messages back and forth between you and your home, it only retains them for a few seconds.</li>
                         <li>You do need an account on the Candle webserver, but this is an anonymous account, so we don't know who is connecting.</li>
-                        <li>Even when outside access is switched on, message about the state of your devices are only sent to the Candle server when you've opened the webpage candlesmarthome.com/web .</li>
+                        <li>Even when outside access is switched on, message about the state of your devices are only sent to the Candle server while you have candlesmarthome.com/web open in your browser. If either side drops out, the Candle server deletes all the messages that were in transit.</li>
                         <li>It's relatively secure. Your home only ever makes outgoing connections to the Candle server, so there is no risk of hackers gaining access through an extra open port.</p>
                     </ol>
                 </p>
-                <p>The downside of Webinterface is that it's rather slow. After you visit candlesmarthome.com/web it can take up to 15 seconds before your home notices that someone is out there trying to connect. Setting devices to new states will also take a few seconds.</p>
+                <p>The downside of Webinterface is that it's rather slow. After you visit candlesmarthome.com/web it can take up to 15 seconds before your home notices that someone is out there asking to be sent. Setting devices to new states will also take a few seconds.</p>
             </div>
             
             
