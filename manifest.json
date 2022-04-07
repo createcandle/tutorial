@@ -25,7 +25,7 @@
   "manifest_version": 1,
   "name": "Welcome",
   "short_name": "Welcome",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "web_accessible_resources": [
     "css/*.css",
     "images/*.svg",
