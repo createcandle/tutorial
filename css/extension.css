@@ -226,7 +226,7 @@
 	}
     
     #extension-welcome-pages-container{
-        padding:4rem;
+        padding:1rem;
     }
 }
 
@@ -236,6 +236,10 @@
         padding-left:4rem;
         padding-right:4em;
         background-color:rgba(0,0,0,.1);
+    }
+    
+    #extension-welcome-pages-container h2{
+        font-size:5rem;
     }
 
 }
