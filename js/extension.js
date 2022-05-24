@@ -96,7 +96,9 @@
                         }
                         document.getElementById('extension-welcome-pages-container').style.display = 'block';
                         
-                    })    
+                    });
+                    
+                    document.getElementById('extension-welcome-pages-container').scrollTop = 0;
                     
                 })
             })
