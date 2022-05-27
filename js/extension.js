@@ -78,8 +78,6 @@
             });
             
             
-            
-            
             document.querySelectorAll('.extension-welcome-option').forEach(item => {
                 item.addEventListener('click', event => {
                     //console.log(event);
@@ -104,7 +102,7 @@
             })
             
             
-            
+            document.getElementById('extension-welcome-view').scrollTop = 0;
             
         }
         
