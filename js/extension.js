@@ -75,7 +75,10 @@
             // Back button
             document.getElementById('extension-welcome-back-button').addEventListener('click', () => {
                 document.getElementById('extension-welcome-pages-container').style.display = 'none';
+                document.getElementById('extension-welcome-view').style.zIndex = 'auto';
             });
+            
+            
             
             
             document.querySelectorAll('.extension-welcome-option').forEach(item => {
@@ -97,12 +100,13 @@
                     });
                     
                     document.getElementById('extension-welcome-pages-container').scrollTop = 0;
+                    document.getElementById('extension-welcome-view').style.zIndex = '3';
                     
                 })
             })
             
             
-            document.getElementById('extension-welcome-view').scrollTop = 0;
+            
             
         }
         
