@@ -61,6 +61,10 @@
             <h2 data-page="music">Streaming music</h2>
         </div>
         
+        <div class="extension-welcome-option" data-page="presence">
+            <h2 data-page="presence">Detect who is home</h2>
+        </div>
+        
         <div class="extension-welcome-option" data-page="control">
             <h2 data-page="control">Controlling your home from the internet</h2>
         </div>
@@ -478,6 +482,32 @@
                         <li>You now have a new Sonos thing.</li>
                     </ul>
                 </p>
+                
+            </div>
+            
+            
+            
+            <div id="extension-welcome-page-presence">
+                <h2>Detect who is home</h2>
+                <p>A popular feature of smart homes is to create automations that depend on who is home. For example, you could turn off all the lights and lower the thermostat automatically if nobody is home.</p>
+                
+                <h3>Network presence detection</h3>
+                <p>The most common way to achieve this is to detect when people's phones are connected to the local wifi network. The Network Presence Detection addon does exactly this. It detects all devices on the network, and turns each one into a thing. It does a new scan every minute.</p>
+                <p>
+                    <ul>
+                        <li>Install the Network Presence Detection addon from the Candle Store.</li>
+                        <li>Once installed, wait a minute for the addon to do its first scan</li>
+                        <li>Navigate to the Things overview page and click on the (+) button. There you should see a new thing for each device that was spotted on the local network. The name of each thing that was found this way will start with "Presence".</li>
+                        <li>Save each device that you want to detect the presence of.</li>
+                    </ul>
+                </p>
+                <p>
+                    <img class="extension-welcome-screenshot" src="/extensions/welcome/images/network_presence_detection.png" alt="An example of a Network Presence Detection thing" />
+                    <span class="extension-welcome-image-description">An example of a Network Presence Detection thing</span>
+                </p>
+                <p>This addon comes with some privacy enhancing features.</p>
+                <p>Firstly, you can disable detecting a specific device for a while by disabling data collection. This is useful in automations. You could, for example, limit presence detection of a phone to the evenings only.</p>
+                <p>Secondly, you can click on the "Data mute" button. Each time that button is pressed, the device will be ignored for an additional hour. So if you click this button 6 times in a row, you can stop presence detection for that device for the next 6 hours.</p>
                 
             </div>
             
