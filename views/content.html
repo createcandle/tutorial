@@ -53,6 +53,14 @@
             <h2 data-page="touch">Using a display</h2>
         </div>
         
+        <div class="extension-welcome-option" data-page="energy">
+            <h2 data-page="energy">Measuring energy use</h2>
+        </div>
+        
+        <div class="extension-welcome-option" data-page="music">
+            <h2 data-page="music">Streaming music</h2>
+        </div>
+        
         <div class="extension-welcome-option" data-page="control">
             <h2 data-page="control">Controlling your home from the internet</h2>
         </div>
@@ -132,8 +140,8 @@
                 <p>
                     <ul>
                         <li>If you're ever stuck somewhere, try refreshing the page. <span class="extension-welcome-show-on-kiosk">As you're using this on a touch screen: refresh the page by dragging your finger down from the top of the display.</span> Try it now!</li> 
-                        <li>The big round button in the top-left of the screen (it looks like this: <img src="/images/menu.svg" style="display:inline;width:16px;height:16px" alt="menu button icon example"> ) will always either take you back a step, or open the main menu. The main menu offers a list all available features. If you ever want to get back to this tutorial, then click on "Welcome" in the main menu. Try it now! Click on the back button, then the main menu button. There scroll down until you can see the "Welcome" option which will take you back to this tutorial.</li>
-                        <li class="extension-welcome-show-on-kiosk">You can use this controller from any device with a browser that is on your local network. Try visiting <strong>http://candle.local</strong> from your laptop or phone.</li>
+                        <li>The big round button in the top-left of the screen (it looks like this: <img src="/images/menu.svg" style="display:inline;width:16px;height:16px" alt="menu button icon example"> ) will always either take you back a step, or open the main menu. The main menu offers a list all available features. If you ever want to get back to this tutorial, then click on "Welcome" in the main menu. Try it now! Click on the back button, then the main menu button. There find the "Welcome" option which will take you back to this tutorial.</li>
+                        <li>You can use this controller from any device with a browser that is on your local network. Try visiting <strong>http://candle.local</strong> from your laptop or phone.</li>
                     </ul>
                 </p>
                 
@@ -175,32 +183,35 @@
         
             <div id="extension-welcome-page-things">
                 <h2>Adding new things</h2>
+                <p>This page describes how you can get and how you can pair devices.</p>
+                
+                <h3>Getting new devices</h3>
                 <p>There are a number of ways you can add new 'things'.</p>
                 <p>
                     <ul>
-                        <li>Purchase new devices</li>
-                        <li>Install new addons that create 'virtual things'</li>    
+                        <li>Purchase new devices. These are 'real' things. We recommend you purchase Zigbee devices. A list of recommended devices can be found on the <a href="https:/www.candlesmarthome.com" target="_blank">Candle website</a>. Going with the recommended devices will give you the best experience, as they have been tested to work well.</li>
+                        <li>Install new addons that create 'virtual things'. irtual things are quite common. For example, the Internet Radio thing does not reflect a real physical radio device.</li>    
                     </ul>
                 </p>
                 
-                <h3>Purchasing devices</h3>
-                <p>We recommend you purchase Zigbee devices. We especially recommend devices by IKEA. A list of recommended devices can be found on the <a href="https:/www.candlesmarthome.com" target="_blank">Candle website</a>. Going with the recommended devices will give you the best experience, as they have been tested to work well.</p>
-                <p>We suggest you avoid WiFi devices unless there is no Zigbee alternative available. While some addons allow you to connect to such devices, they come with too many downsides. For one, they can autonomously connect to the internet, which can lead to unwanted behavioural tracking. If you must use WiFi devices, then connect them via the Candle Hotspot addon. This addon creates a separate 'guest network', and will allow you some control over which servers these devices connect to.</p>
-                <p>If should go without saying that you should avoid using devices from parties such as Google or Amazon for whom large scale data collection is part of their business model.</p>
-                
-                <h3>Virtual devices</h3>
-                <p>Virtual things are quite common. For example, the Energy Use addon calculates the total energy use as reported by real energy monitoring devices, and creates a new 'virtual thing' that shows the total energy use of those devices.</li>
-                    
-                <h3>Things inbox</h3>
-                <p><img src="/images/add.svg" style="float:left; margin:1rem; width:3rem"/>Getting the things to show up in the things overview starts by going to the thing overview and clicking on the big plus button in the bottom right. This will take you to the "things inbox", where you can accept newly available things.</p>
+                <h3>Pairing new devices</h3>
+                <p><img src="/images/add.svg" style="float:left; margin:1rem; width:3rem"/>Getting the things to show up in the things overview starts by going to the thing overview and clicking on the big plus button in the bottom right. This will show you the "things inbox", and put Candle in pairing mode.</p>
+                <p>Next, get your new device into pairing mode too. Your new device's manual will describe how to initiate pairing. Some common methods:</p>
+                <p>
+                    <ul>
+                        <li>A lot of Zigbee devices require you to press and hold a pairing button for about 5 to 10 seconds. Typically a light will then turn on or start to blink.</li>
+                        <li>Some devices, such as those by IKEA, may require you to press the pairing button a few times in a row.</li>
+                        <li>Some devices don't have a pairing button. In the case of IKEA light bulbs you'll have to turn the light off and on again in quick succession 6 times.</li>
+                    </ul>
+                </p>
                 <p>
                     <img class="extension-welcome-screenshot" src="/extensions/welcome/images/things_inbox.png" alt="An example of the things inbox" />
                     <span class="extension-welcome-image-description">An example of the things inbox</span>
                 </p>
-                <p>At the things inbox page you can also give your new thing a name. If you use voice control, then make sure the name is easy to pronounce.</p>
-                <p>Things have "properties". For example, a lightbulb has a "state" (on or off) and a "brightness". Usually one of the properties can be highlighted on the things overview. You can select which one using the dropdown.</p>
+                <p>Once the device shows up on the inbox page you can give it a name. If you use voice control, then make sure the name is easy to pronounce.</p>
+                <p>Things have "properties". For example, a lightbulb has a "state" (on or off) and a "brightness". Usually one of the properties can be highlighted on the things overview. You can select which one you prefer using the dropdown.</p>
                 <p>If you select "custom property", then you can upload a custom icon for your thing. Have a look at www.publicdomainvectors.com if you want to download some icons.</p>
-                 
+                
                 <p><img src="/images/overflow.svg" style="float:left; margin:1rem; width:3rem"/>You can always change all this later by going to a thing's page, and then clicking on the edit button in the bottom right.</p>
                 
                 <h3>Groups</h3>
@@ -293,7 +304,7 @@
         
             <div id="extension-welcome-page-voice">
                 <h2>Voice control</h2>
-                <p>Candle doesn't come with voice control pre-installed, but it's easy to install from the Candle app store.</p>
+                <p>Candle doesn't come with voice control pre-installed, but it's easy to install from the Candle store.</p>
                     
                 <p>
                     <img class="extension-welcome-screenshot" src="/extensions/welcome/images/chatting_with_voco.gif" alt="Setting a timer through Voco chat" />
@@ -327,14 +338,14 @@
         
             <div id="extension-welcome-page-features">
                 <h2>Adding features</h2>
-                <p>You can extend the possibilities of this controller by installing "addons" from the Candle app store. It's a bit like the apps on smart phones.</p>
+                <p>You can extend the possibilities of this controller by installing "addons" from the Candle Store. It's a bit like the apps on smart phones.</p>
                 
                 <p>
                     <img class="extension-welcome-screenshot" src="/extensions/welcome/images/install_addon.gif" alt="Installing an addon from the store" />
                     <span class="extension-welcome-image-description">Installing an addon from the store</span>
                 </p>
                 
-                <p>The app store tries to inform you of what 'addons' are available, and how those addons may affect privacy and security. It provides the following pieces of information:</p>
+                <p>The Candle Store tries to inform you of what 'addons' are available, and how those addons may affect privacy and security. It provides the following pieces of information:</p>
                 
                 <p>
                     <ul>
@@ -357,7 +368,7 @@
                 </p>
                 
                 <h3>Limitations</h3>
-                <p>Candle is built 'on top of' the Webthings Gateway, an open source project originally developed by Mozilla, the makers of Firefox. The addons you find in the app store are created by volunteers, and are open source. That makes them wonderfully transparent. It also means they may contain bugs, or create instabilities. They may also send data to cloud services (simply because the feature it offers requires it).</p>
+                <p>Candle is built 'on top of' the Webthings Gateway, an open source project originally developed by Mozilla, the makers of Firefox. The addons you find in the store are created by volunteers, and are open source. That makes them wonderfully transparent. It also means they may contain bugs, or create instabilities. They may also send data to cloud services (simply because the feature it offers requires it).</p>
                 <p>
                     <ul>
                         <li>We cannot guarantee that non-Candle addons will work well with the addons we developed.</li>
@@ -365,6 +376,7 @@
                         <li>Be aware that even if an addon has good reviews, any update could change how the addon functions.</li>
                     </ul>
                 </p>
+                <p>Candle is not affiliated with the Webthings project in any official capacity, it's a separate project.</p>
             </div>
             
             
@@ -389,10 +401,92 @@
             </div>
             
             
+            <div id="extension-welcome-page-energy">
+                <h2>Measuring energy use</h2>
+                <p>There are a number of ways to keep track of how much energy your devices use.</p>
+                <p>
+                    <ul>
+                        <li>Per device</li>
+                        <li>For the entire home</li>
+                    </ul>
+                </p>
+                
+                <h3>Per device</h3>
+                <p>Probably the easiest way to find out how much electricity individual devices are using is to plug them into power sockets that can also measure energy use.</p>
+                <p>If you have some of these devices connected, then have a look at the Energy Use addon, which you can find in the Candle Store. It will allow you to see how much these devices are using in total, on a per day and per week basis.</p>
+                <p>
+                    <img class="extension-welcome-screenshot" src="/extensions/welcome/images/candle-energy-use.png" alt="An example of the Energy Use addon" />
+                    <span class="extension-welcome-image-description">An example of the Energy Use addon</span>
+                </p>
+                
+                <h3>For the entire home</h3>
+                <p>If your home has a smart meter, then Candle can connect to it. Have a look at the "P1 adapter" in the Candle Store, for example. As the name implies, it allows you to connect with smart meters that follow the P1 standard. You will likely need to connect your Candle to your smart meter using a special USB-to-P1-port cable for this. </p>
+                
+                <h3>Tesla</h3>
+                <p>There are other options available in the Candle Store, created by the community. For example, there is an addon to communicate with Tesla chargers.</p>
+                
+            </div>
+            
+            
+            
+            <div id="extension-welcome-page-music">
+                <h2>Streaming music</h2>
+                <p>Candle comes with a lot of options for music streaming. It can act as both a music receiver or a music transmitter.</p>
+                
+                <h3>Airplay receiver</h3>
+                <p>If you own an iPhone or Mac, then you may be familiar with streaming music though Airplay. By installing the "Airport" addon from the Candle Store you will be able to stream music from your phone, tablet or laptop to the Candle's speakers.</p>
+                <p>
+                    <ul>
+                        <li>Install the Airport addon.</li>
+                        <li>Make sure your phone and the Candle controller are on the same local network.</li>
+                        <li>On your iphone select the "stream over airplay" option in your prefered music player</li>
+                        <li>On your Mac, click on the sound icon in the top-right of the main menu bar, and select "Candle audio" as the output.
+                    </ul>
+                </p>
+                
+                <h3>Connecting a Bluetooth speaker</h3>
+                <p>The Bluetooth addon allow you to pair with and connect to bluetooth speakers.</p>
+                <p>
+                    <ul>
+                        <li>Put your Bluetooth speaker into pairing mode. Typically this is done by pressing a button with a Bluetooth icon for a few seconds until a light turns on or starts blinking.</li>
+                        <li>On the Candle Controller, open the Bluetooth page and do a scan by clicking on the (+) icon in the bottom right.</li>
+                        <li>If you see your speaker in the list of detected devices, click on the link icon to start the pairing process.</li>
+                        <li>If pairing is succesful, then click on the toggle switch icon to also connect to the speaker.</li>
+                        <li>Finally, select the bluetooth speaker as audio output wherever possible. For example, open the Radio thing and select "Bluetooth speaker" as the prefered audio output. Voco (voice control) will also require you to select the Bluetooth speaker as the audio output in the same way.</li>
+                    </ul>
+                </p>
+                
+                <h3>Bluetooth receiver</h3>
+                <p>Candle can act as a Bluetooth receiver too. This process is a bit more complex, and in reverse, where Candle first tries to connect to your audio source device (e.g. your laptop or phone). The trick is to get both devices to trust each other.</p>
+                <p>
+                    <ul>
+                        <li>Put your music source device (laptop or phone) into bluetooth pairing mode, and make sure it can be detected by other devices.</li>
+                        <li>On the Candle Controller, open the Bluetooth page and do a scan by clicking on the (+) icon in the bottom right.</li>
+                        <li>If you see your audio source device in the list of detected devices, click on the link icon to start the pairing process.</li>
+                        <li>If pairing is succesful, then click on the toggle switch icon to also connect to the audio source device.</li>
+                        <li>Now you can do a Bluetooth scan on your audio source device, and pair with and connect to Candle.</li>
+                    </ul>
+                </p>
+                
+                <h3>Sonos speaker</h3>
+                <p>Candle can control Sonos speakers. The trickiest part is that you will need to find out the IP address of your Sonos speaker. One way of doing this is to install the Network Presence Detection addon first. It can give show you the IP address of each device on your local network. Another way is to find out its IP address through the interface of your router.</p>
+                <p>
+                    <ul>
+                        <li>Install the Sonos Addon from the Candle Store.</li>
+                        <li>Once installed, navigate to the addon's settings page. There you can add the IP address of your speaker. Don't forget to click 'Save'.</li>
+                        <li>A new thing will be available in your things inbox. Go to the things overview page and click on the (+) to accept it into your system.</li>
+                        <li>You now have a new Sonos thing.</li>
+                    </ul>
+                </p>
+                
+            </div>
+            
+            
+            
             <div id="extension-welcome-page-control">
                 <h2>Controlling your home from the internet</h2>
-                <p>Candle is designed to work fine without an internet connection. However, in some cases you may want to control or check up on your house when you're away from home.</p>
-                <p>There are many addons in the appstore that will allow you to connect your home to all kinds of networks. But there are two we recommend because we built them ourselves. These addons are privacy friendly and easy to use:</p>
+                <p>Candle is designed to work fine without an internet connection. However, in some cases you may actually want Candle to connect to the internet. For example, you may want to control or check up on your house when you're away from home.</p>
+                <p>There are many addons in the Candle Store that will allow you to connect your home to all kinds of networks. But there are two we recommend because we built them ourselves. These addons are privacy friendly and easy to use:</p>
                 
                 <h3>Voco</h3>
                 <p>This addon not only offers 100% local voice control, but you can also connect it to a messaging network called Matrix.</p>
