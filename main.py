@@ -1,4 +1,4 @@
-"""Welcome add-on for WebThings Gateway."""
+"""Tutorial add-on for Candle Controller."""
 
 from os import path
 import functools
@@ -10,7 +10,7 @@ import time
 #sys.path.append(path.join(path.dirname(path.abspath(__file__)), 'lib'))
 
 #from pkg.power_settings import PowerSettingsAdapter  # noqa
-from pkg.welcome import WelcomeAPIHandler  # noqa
+from pkg.tutorial import TutorialAPIHandler  # noqa
 
 
 
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     signal.signal(signal.SIGINT, cleanup)
     signal.signal(signal.SIGTERM, cleanup)
     #_HANDLER = PowerSettingsAdapter(verbose=True)
-    _HANDLER = WelcomeAPIHandler(verbose=True)
+    _HANDLER = TutorialAPIHandler(verbose=True)
     
 
     # Wait until the proxy stops running, indicating that the gateway shut us

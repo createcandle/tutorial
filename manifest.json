@@ -19,12 +19,12 @@
       "strict_min_version": "0.10.0"
     }
   },
-  "homepage_url": "https://github.com/createcandle/welcome",
-  "id": "welcome",
+  "homepage_url": "https://github.com/createcandle/tutorial",
+  "id": "tutorial",
   "license": "MPL-2.0",
   "manifest_version": 1,
-  "name": "Welcome",
-  "short_name": "Welcome",
+  "name": "Tutorial",
+  "short_name": "Tutorial",
   "version": "1.0.3",
   "web_accessible_resources": [
     "css/*.css",
