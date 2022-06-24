@@ -20,7 +20,7 @@
                             'action': 'init'
                         }
                     ).then((body) => {
-                        console.log('Tutorial init complete. body: ', body);
+                        //console.log('Tutorial init complete. body: ', body);
                         this.show_at_start = body.show;
                         try{
                             if(body.show){
