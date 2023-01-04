@@ -32,12 +32,14 @@
     box-sizing: border-box;
     overflow: auto;
     position:absolute;
+    top:7.6rem;
     color:white;
 }
-
+/*
 #extension-tutorial-view h3{
     margin-top:6rem;
 }
+*/
 
 #extension-tutorial-view a{
     color:white;
