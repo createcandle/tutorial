@@ -45,8 +45,8 @@
     color:white;
 }
 
-#extension-tutorial-pages li,
-#extension-tutorial-pages p{
+#extension-tutorial-content li,
+#extension-tutorial-content p{
     line-height:2.7rem;
 }
 
@@ -56,8 +56,12 @@
 }
 */
 
-#extension-tutorial-pages li{
+#extension-tutorial-content li{
     margin-bottom:1rem;
+}
+
+#extension-tutorial-content img{
+	max-width:100%;
 }
 
 
@@ -138,10 +142,26 @@
         
 }
 
+.extension-tutorial-option-split{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+.extension-tutorial-option-split > div{
+	width:50%;
+	max-width:50%;
+	min-width:200px;
+}
+
 .extension-tutorial-option img{
     width:6rem;
     margin-top:2rem;
     margin-right:2rem;
+}
+
+.extension-tutorial-option-split img{
+	width:100%;
 }
 
 .extension-tutorial-option:first-of-type{
@@ -177,7 +197,6 @@
     padding:2rem;
     max-width:80rem;
     margin:0 auto 50rem auto;
-    
 }
 
 #extension-tutorial-pages > div{
@@ -185,6 +204,23 @@
     padding-top:10rem;
     padding-bottom:10rem;
 }
+
+#extension-tutorial-pages > div > p:first-of-type{
+	font-size:1.8rem;
+	line-height:180%;
+	margin-bottom:6rem;
+}
+
+.extension-tutorial-half-width-image{
+	width:50%;
+	margin:1rem auto;
+	display:block;
+}
+
+.extension-tutorial-float-right{
+	float:right;
+}
+
 
 /*  back button  */
 
@@ -224,8 +260,9 @@
 
 @media screen and (max-width: 640px) {
 	
-    #extension-tutorial-discussion-button > div:first-of-type{
-	    display:none;
+    #extension-tutorial-discussion-button > div:first-of-type img{
+	    width:80%;
+		margin:2rem auto 0 auto;
 	}
     
     #extension-tutorial-pages-container{
