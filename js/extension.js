@@ -125,7 +125,7 @@
             // Back button
             document.getElementById('extension-tutorial-back-button').addEventListener('click', () => {
                 document.getElementById('extension-tutorial-pages-container').style.display = 'none';
-                document.getElementById('extension-tutorial-view').style.zIndex = 'auto';
+                //document.getElementById('extension-tutorial-view').style.zIndex = 'auto';
             });
             
             
@@ -150,7 +150,7 @@
                     });
                     
                     document.getElementById('extension-tutorial-pages-container').scrollTop = 0;
-                    document.getElementById('extension-tutorial-view').style.zIndex = '3';
+                    //document.getElementById('extension-tutorial-view').style.zIndex = '3';
                     
                 })
             })

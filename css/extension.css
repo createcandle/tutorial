@@ -128,7 +128,7 @@
     margin:2rem auto;
     width:100%;
     background-color:rgba(0,0,0,.4);
-    border-radius:.5rem;
+    border-radius:1rem;
     padding:1rem 2rem;
     text-align:left;
     box-sizing:border-box;
@@ -149,8 +149,8 @@
 }
 
 .extension-tutorial-option-split > div{
-	width:50%;
-	max-width:50%;
+	width:80%;
+	max-width:80%;
 	min-width:200px;
 }
 
@@ -268,6 +268,13 @@
     #extension-tutorial-pages-container{
         padding:1rem;
     }
+}
+
+@media screen and (min-width: 641px) {
+	.extension-tutorial-option-split > div{
+		width:50%;
+		max-width:50%;
+	}
 }
 
 @media screen and (min-width: 1025px) {
